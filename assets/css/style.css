@@ -31,7 +31,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Noto sans", sans-serif;
+    font-family: "Noto sans";
     font-style: normal;
     scroll-behavior: smooth;
 }
@@ -156,7 +156,7 @@ canvas {
     color: #0C5790;
     opacity: 0;
     transform: rotateY(-90deg);
-    animation: loading 3s infinite;
+    animation: loading 1.2s infinite;
 }
 .loading span:nth-child(2)::after {
     animation-delay: 0.2s;
@@ -264,9 +264,9 @@ header {
     position: relative;
     width: 64px;
 }
-.aryaBtn img {
+/* .aryaBtn img {
     filter: var(--icons-filter);
-}
+} */
 .aryaBtn {
     color: var(--btn-border);
     font-size: 18px;
@@ -288,9 +288,9 @@ header {
     color: var(--section-background);
     border-radius: 16px;
 }
-.aryaBtn:hover img {
+/* .aryaBtn:hover img {
     filter: var(--icons-hover);
-}
+} */
 .aryaBtn-toggle-main {
     display: flex;
     align-items: center;
@@ -356,10 +356,31 @@ header {
     justify-content: center;
     transition: all 0.3s ease-in-out;
 }
+.text-icons {
+    color: var(--btn-border);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    border-radius: 16px;
+    border-top: 2px solid var(--btn-border);
+    border-right: 4px solid var(--btn-border);
+    border-bottom: 4px solid var(--btn-border);
+    border-left: 2px solid var(--btn-border);
+    padding: 12px 24px;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
 .media-icons:hover {
     border-radius: 10px;
     background: #FFF;
     transition: all 0.3s ease-in-out;
+}
+.text-icons:hover {
+    background: var(--main-text);
+    color: var(--section-background);
+    border-radius: 16px;
 }
 .media-icons:hover img {
     filter: brightness(0) saturate(100%) invert(11%) sepia(1%) saturate(1367%) hue-rotate(161deg) brightness(98%) contrast(97%);
@@ -482,7 +503,20 @@ header {
     font-size: 48px;
     font-weight: 700;
     line-height: 64px;
-    max-width: 160px;
+    max-width: 200px;
+}
+.arya-stack-about2 span {
+    color: var(--main-text);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+}
+.arya-stack-about2 {
+    color: var(--main-text);
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 64px;
+    max-width: 200px;
 }
 .WebExperts {
     color: var(--sub-text);
