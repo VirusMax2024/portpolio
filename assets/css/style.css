@@ -1185,13 +1185,13 @@ ul.slick-dots button {
     background: rgba(255, 219, 89, 0.10);
 }
 .sketch-text p:nth-of-type(2) {
-    color: var(--1, #FFDB59) !important;
+    color: var(--1, #e6b400) !important;
 }
 .office-text p:nth-of-type(2) {
     color: var(--1, #f77204) !important;
 }
 .canva-text p:nth-of-type(2) {
-    color: var(--1, #04cff7) !important;
+    color: var(--1, #009bc2) !important;
 }
 .ae-text p:nth-of-type(2) {
     color: var(--1, #9999FF) !important;
